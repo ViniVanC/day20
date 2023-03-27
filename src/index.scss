@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+:root {
+  --black: rgb(9, 32, 27);
+  --white: rgb(236, 223, 171);
+  --yellow: rgb(249, 177, 34);
+  --green: rgb(27, 159, 84);
+  --red: rgb(235, 92, 55);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#root {
+  font-family: "IBM Plex Mono", monospace;
+}
