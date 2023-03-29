@@ -1,39 +1,18 @@
-import { Box } from "./components/Box";
-import { Container } from "./components/Container";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Contact } from "./pages/Contact";
+import { Home } from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="App">
-      <Container>
-        <Box>
-          <h2 className="title">
-            Вітаю. <br /> Пропоную тобі вступити до лав нашої організації.
-          </h2>
-          <p>
-            Для цього просто залиште заявку, заповнивши відповідну форму нижче.
-          </p>
-          <form className="form">
-            <input type="text" placeholder="ім'я" />
-            <input type="text" placeholder="вік" />
-            <textarea placeholder="навички"></textarea>
-            <button>надіслати</button>
-          </form>
-          <hr />
-        </Box>
-        <Box>
-          <h2 className="title">Бачили щось аномальне? Повідомте нас.</h2>
-          <p>
-            Якщо ви, чи ваші близькі бачили щось аномальне, паранормальне,
-            незвичайне, дивне. Обов'язково повідомляйте нас про це.
-          </p>
-          <form className="form">
-            <input type="text" placeholder="ім'я" />
-            <textarea placeholder="опишіть що ви бачили"></textarea>
-            <button>надіслати</button>
-          </form>
-        </Box>
-      </Container>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" index element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
