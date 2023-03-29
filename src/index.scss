@@ -88,6 +88,7 @@ button {
 
   main {
     flex: 1 1 auto;
+    margin: 50px 0;
   }
 }
 
@@ -98,7 +99,9 @@ button {
 }
 
 .box {
-  margin: 50px 0;
+  &:not(:last-child) {
+    margin: 0 0 50px 0;
+  }
 }
 
 .title {
