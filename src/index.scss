@@ -21,6 +21,25 @@ hr {
   border-bottom: 1px dashed var(--white);
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--orange);
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: darken($color: #e69077, $amount: 20);
+    }
+  }
+
+  &:active {
+    color: darken($color: #e69077, $amount: 30);
+  }
+}
+
 input,
 textarea {
   background-color: transparent;
@@ -66,6 +85,10 @@ button {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  main {
+    flex: 1 1 auto;
+  }
 }
 
 .container {
@@ -89,4 +112,52 @@ button {
   display: flex;
   gap: 20px;
   flex-direction: column;
+}
+
+.header {
+  padding: 20px 0;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: grid;
+    grid-template-areas:
+      "circle1 circle2"
+      "circle3 circle3";
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3px;
+    grid-column-gap: 7px;
+    justify-items: center;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: var(--white);
+
+      &:nth-child(1) {
+        grid-area: circle1;
+      }
+      &:nth-child(2) {
+        grid-area: circle2;
+      }
+      &:nth-child(3) {
+        grid-area: circle3;
+      }
+    }
+  }
+
+  .navbar {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  }
 }
