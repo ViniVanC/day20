@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
 
 :root {
-  --black: #0e1413;
-  --white: #ecdfab;
-  --yellow: #f9b122;
-  --green: #1b9f54;
-  --red: #eb5c37;
+  --black: #2e3c45;
+  --white: #d6c4b8;
+  --orange: #e69077;
+  --red: #da4348;
+  --darkRed: #8b3e50;
 }
 
 * {
@@ -30,7 +30,7 @@ textarea {
   border-bottom: 1px solid var(--white);
 
   &::placeholder {
-    color: rgba($color: #ecdfab, $alpha: 0.5);
+    color: rgba($color: #d6c4b8, $alpha: 0.5);
   }
 }
 
@@ -48,12 +48,12 @@ button {
 
   @media (min-width: 768px) {
     &:hover {
-      background-color: darken($color: #ecdfab, $amount: 10);
+      background-color: darken($color: #d6c4b8, $amount: 10);
     }
   }
 
   &:active {
-    background-color: darken($color: #ecdfab, $amount: 20);
+    background-color: darken($color: #d6c4b8, $amount: 20);
   }
 }
 
