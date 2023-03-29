@@ -1,27 +1,11 @@
 import React from "react";
-import { Box } from "../components/Box";
 import { Container } from "../components/Container";
 
 export const Contact = () => {
   return (
     <div className="contact-page">
       <Container>
-        <Box>
-          <h2 className="title">
-            Вітаю. <br /> Пропоную тобі вступити до лав нашої організації.
-          </h2>
-          <p>
-            Для цього просто залиште заявку, заповнивши відповідну форму нижче.
-          </p>
-          <form className="form">
-            <input type="text" placeholder="ім'я" />
-            <input type="text" placeholder="вік" />
-            <textarea placeholder="навички"></textarea>
-            <button>надіслати</button>
-          </form>
-          <hr />
-        </Box>
-        <Box>
+        <div className="box">
           <h2 className="title">Бачили щось аномальне? Повідомте нас.</h2>
           <p>
             Якщо ви, чи ваші близькі бачили щось аномальне, паранормальне,
@@ -32,7 +16,20 @@ export const Contact = () => {
             <textarea placeholder="опишіть що ви бачили"></textarea>
             <button>надіслати</button>
           </form>
-        </Box>
+        </div>
+        <div className="box">
+          <h2 className="title">Хочете приєднатись до агенції.</h2>
+          <p>
+            Для цього просто залиште заявку, заповнивши відповідну форму нижче.
+          </p>
+          <form className="form">
+            <input type="text" placeholder="ім'я" />
+            <input type="text" placeholder="вік" />
+            <textarea placeholder="навички"></textarea>
+            <button>надіслати</button>
+          </form>
+          <hr />
+        </div>
       </Container>
     </div>
   );
