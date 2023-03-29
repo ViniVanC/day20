@@ -6,13 +6,12 @@ export const Intro = ({ funScrollToNextSection }) => {
   return (
     <section id="intro">
       <h1>
-        "lorem" <br /> Lorem, ipsum dolor.
+        "Dots" <br /> Агенція боротьби та вивчення аномалій.
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quod
-        fugiat earum asperiores veniam deserunt, voluptates, error obcaecati
-        architecto velit quae, dolore dolores. Sed, ad veritatis! Asperiores ab
-        dolore ducimus.
+        Ми агенція що працює з аномаліями. Якщо ви зайшли на цей сайт і вам є що
+        нам повідомити, не витрачайте дарма часу можливо у вас його вже дуже
+        мало.
       </p>
       <Link to="/contact">contact us</Link>
       <button className="scrollBtn" onClick={funScrollToNextSection}>

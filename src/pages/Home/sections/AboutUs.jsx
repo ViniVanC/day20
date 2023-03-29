@@ -3,18 +3,22 @@ import React from "react";
 export const AboutUs = () => {
   return (
     <section id="about-us">
-      <h2 className="title">lorem us</h2>
+      <h2 className="title">Хто ми такі?</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        temporibus, officiis quasi natus impedit, sapiente perspiciatis
-        asperiores quis unde animi, libero iste possimus tenetur. Maiores magni
-        minima praesentium omnis eligendi.
+        Ми Українська філія організації "Dots". "Dots" - приватна
+        військово-дослідницька компанія, наша робота захищати вас від справжніх
+        жахів цього світу. Ми працюємо у кожному куточку світу
       </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-        temporibus, officiis quasi natus impedit, sapiente perspiciatis
-        asperiores quis unde animi, libero iste possimus tenetur. Maiores magni
-        minima praesentium omnis eligendi.
+        Наші професійні військові нейтралізують аномальні загрози. Вони
+        проходять трьох річну підготовку перед першим завданням. Наші бійці не
+        знають ні страху, ні співчуття до ворога. Ми завжди приходимо на
+        допомогу, в разі потреби.
+      </p>
+      <p>
+        Наші вчені працюють над методами використання безпечних аномалій у
+        корисних людству цілях. Ми вивчаємо аномалії для більш ефективного
+        знищення небезпечних та вигідного використання мирних.
       </p>
     </section>
   );

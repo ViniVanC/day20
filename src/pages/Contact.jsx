@@ -3,7 +3,7 @@ import { Container } from "../components/Container";
 
 export const Contact = () => {
   return (
-    <div className="contact-page">
+    <section className="contact-page">
       <Container>
         <div className="box">
           <h2 className="title">Бачили щось аномальне? Повідомте нас.</h2>
@@ -31,6 +31,6 @@ export const Contact = () => {
           </form>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
