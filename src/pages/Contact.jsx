@@ -17,6 +17,7 @@ export const Contact = () => {
             <button>надіслати</button>
           </form>
         </div>
+        <hr />
         <div className="box">
           <h2 className="title">Хочете приєднатись до агенції.</h2>
           <p>
@@ -28,7 +29,6 @@ export const Contact = () => {
             <textarea placeholder="навички"></textarea>
             <button>надіслати</button>
           </form>
-          <hr />
         </div>
       </Container>
     </div>
